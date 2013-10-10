@@ -1,6 +1,6 @@
 # Green text, time, and date; windows in blue:
 #status bar
-hardstatus alwayslastline "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{=b dw}%Y-%m-%d %c:%s %{=b dy}"
+hardstatus alwayslastline "%{= dW}%-Lw%{= dY}%50> %n*%f %t%{= dW}%+Lw%< %=%{=b dw}%Y-%m-%d %c:%s %{=b dy}"
 # Turn off start message:
 startup_message off
 
@@ -15,4 +15,5 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 # erase background with current bg color
 defbce "on"
 
-term screen-256color-bce
+#term screen-256color-bce
+term xterm-256color
